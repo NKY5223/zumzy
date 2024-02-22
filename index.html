@@ -1,10 +1,4 @@
-<!-- index.html -->
-<html>
-  <head>
-    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
-  </head>
-  <body></body>
-</html>
+
 <head>
   <link
     rel="stylesheet"
@@ -46,26 +40,6 @@
             <div id="games"></div>
         </div>
      
-<div class="bg:gray-22.active active p:8|20_li p:10|0 r:10 w:full max-w:340@sm">
-    <input class="bg:gray-18:focus font:gray-40::placeholder outline:0 font:14 w:calc(100%-1.25rem) mx:10 p:12 lh:1 r:5" placeholder="if u dont use wthack i will beat u" type="search" />
-    <ul class="@shake|1s|infinite>li:first list-style:none mt:10">
-        {users.map((user, index) =>
-            <li class="bg:gray-28:hover bg:gray-32:active flex gap:12 cursor:pointer" key={index}>
-                <div class="rel">
-                    <img src={user.url} width="40" height="40" class="round object:cover" alt="avatar" />
-                    {index < 2 && <svg class="abs right:1 bottom:1 bg:green-70 outline:2|solid|white outline:gray-22@dark round w:7 h:7" />}
-                </div>
-                <div>
-                    <div class="flex align-items:center">
-                        <div class="text:14 font:medium font:gray-88@dark capitalize">{user.name}</div>
-                        <div class="font:12 font:fade-54 font:gray-44@dark ml:8">{user.time}</div>
-                    </div>
-                    <p class="text:13 m:0">{user.message}</p>
-                </div>
-            </li>
-        )}
-    </ul>
-</div>
         <!--this really needs to be organized, but this is the only way for a one pager without weird use of iframes (given this html/css/js only thing)-->
         <div id="settingsDiv" class="hidden">
             <h1>Settings</h1>
