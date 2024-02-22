@@ -31,7 +31,7 @@ if (URLParams.has("username")) {
 history.replaceState(null, "SkapClient", location.protocol + "//" + location.host + location.pathname);
 
 //This is not true. It's barely customizable......................................!!!!!!!!!!
-console.log("%cSkapNightly, the hyper-customizable SkapClient", `color: #ff33cc; font-size: 24px; background-color: rgba(20, 20, 20, 0.6);`);
+console.log("%csome heavenly being gave us WThack", `color: #ff33cc; font-size: 24px; background-color: rgba(20, 20, 20, 0.6);`);
 
 /**
  * @type {HTMLCanvasElement}
