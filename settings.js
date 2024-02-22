@@ -142,6 +142,16 @@ darkModeBtn.addEventListener("input", () => {
     }
 });
 
+const pinkModeBtn = document.getElementById("pkmodebtn");
+pinkModeBtn.checked = localStorage.getItem("pkmode");
+pinkModeBtn.addEventListener("input", () => {
+    if (pinkModeBtn.checked) {
+        localStorage.setItem("pkmode", "yes");
+    } else {
+        localStorage.removeItem("pkmode");
+    }
+});
+
 const plrInterpBtn = document.getElementById("plrinterpbtn");
 plrInterpBtn.checked = localStorage.getItem("plrinterp");
 plrInterpBtn.addEventListener("input", () => {
