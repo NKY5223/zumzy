@@ -22,13 +22,15 @@
         <link rel="icon" href="NKY.png" />
         <meta charset="utf8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A Client for skap.io. Higher fps, HTML chat and more!">
+        <meta name="description" content="rizzed up Nightly+NkyClient">
+      <script src="https://cdn.master.co/css"></script>
         <!-- Discord Embed -->
-        <meta content=persiconClient" property="og:title">
-        <meta content="SkapClient Mod made by Lupta(helped by nky)" property="og:description">
+        <meta content=precisionClient" property="og:title">
+        <meta content="weUPUPUPPIDY" property="og:description">
         <meta content="https://www.youtube.com/watch?v=dQw4w9WgXcQ" property="og:url">
         <meta content="https://nky5223.github.io/SkapClient/skap.ico" property="og:image">
         <meta content="#bd687f" name="theme-color">
+      
     </head>
     <body>
         <h2 id="connecting"></h2>
@@ -43,20 +45,27 @@
             </div><br>
             <div id="games"></div>
         </div>
-      <div class="bg:gray-22 p:10 r:10 max-w:350">
-    <img class="object:cover w:full square r:5" src="/Textures/skins/star.png" loading="lazy" alt="clothes" />
-    <div class="mt:10 p:15">
-        <div class="font:24 font:bold capitalize">star</div>
-        <div class="font:14 font:gray-66 mt:5">new fit</div>
-        <div class="mt:12 font:semibold">$120.0 USD</div>
-        <div class="mt:12 flex gap:8">
-            <button class="square w:40 h:40 font:0 round b:1|solid|gray-28 p:3">
-                <div class="bg:white full round">white</div>
-            </button>
-            <button class="square w:40 h:40 font:0 round b:1|solid|gray-28 p:3">
-                <div class="bg:#999 full round">white</div>
-            </button>
-
+     
+<div class="bg:gray-22.active active p:8|20_li p:10|0 r:10 w:full max-w:340@sm">
+    <input class="bg:gray-18:focus font:gray-40::placeholder outline:0 font:14 w:calc(100%-1.25rem) mx:10 p:12 lh:1 r:5" placeholder="if u dont use wthack i will beat u" type="search" />
+    <ul class="@shake|1s|infinite>li:first list-style:none mt:10">
+        {users.map((user, index) =>
+            <li class="bg:gray-28:hover bg:gray-32:active flex gap:12 cursor:pointer" key={index}>
+                <div class="rel">
+                    <img src={user.url} width="40" height="40" class="round object:cover" alt="avatar" />
+                    {index < 2 && <svg class="abs right:1 bottom:1 bg:green-70 outline:2|solid|white outline:gray-22@dark round w:7 h:7" />}
+                </div>
+                <div>
+                    <div class="flex align-items:center">
+                        <div class="text:14 font:medium font:gray-88@dark capitalize">{user.name}</div>
+                        <div class="font:12 font:fade-54 font:gray-44@dark ml:8">{user.time}</div>
+                    </div>
+                    <p class="text:13 m:0">{user.message}</p>
+                </div>
+            </li>
+        )}
+    </ul>
+</div>
         <!--this really needs to be organized, but this is the only way for a one pager without weird use of iframes (given this html/css/js only thing)-->
         <div id="settingsDiv" class="hidden">
             <h1>Settings</h1>
