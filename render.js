@@ -171,8 +171,8 @@ function render() {
     }
     
     if (pinkMode) {
-        map.color = "rgb(69, 69, 69)";
-        map.background = "rgb(69, 69, 69)";
+        map.color = "rgb(76, 51, 51)";
+        map.background = "rgb(65, 32, 45)";
     }
 
     ctx.fillStyle = map.color;
