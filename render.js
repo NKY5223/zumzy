@@ -169,9 +169,10 @@ function render() {
         map.color = "rgb(25, 25, 25)";
         map.background = "rgb(50, 50, 50)";
     }
+    
     if (pinkMode) {
-        map.color = "rgb(76, 51, 51)";
-        map.background = "rgb(65, 32, 45)";
+        map.color = "rgb(69, 69, 69)";
+        map.background = "rgb(69, 69, 69)";
     }
 
     ctx.fillStyle = map.color;
