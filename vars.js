@@ -408,6 +408,7 @@ var debug;
 var censor;
 
 var darkMode;
+var pinkMode
 var playerInterpolation;
 
 function loadSettings() {
@@ -436,6 +437,7 @@ function loadSettings() {
     blocked = localStorage.getItem("blocked") ? localStorage.getItem("blocked").split(" ") : [];
     debug = Boolean(localStorage.getItem("debug"));
     darkMode = Boolean(localStorage.getItem("dkmode"));
+    pinkMode = Boolean(localStorage.getItem("pkmode"));
     playerInterpolation = Boolean(localStorage.getItem("plrinterp"));
     if (debug) {
         show(posDiv);
