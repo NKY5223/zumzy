@@ -205,12 +205,12 @@ input[type=color] {
 .hat img{
     width: 50px;
     height: 50px;
-    background: #ffffff20;
+    background: #7698ab;
     border: 5px solid transparent;
     cursor: pointer;
 }
 .hat.active img {
-    background: #00ff0020
+    background: #b0c7ae
 }
 
 #gamesDiv {
@@ -236,8 +236,8 @@ input[type=color] {
     cursor: pointer;
 }
 .private {
-    border-color: #808000;
-    background: #404000;
+    border-color: #2bae21;
+    background: #4cc03b;
 }
 
 #createGameMenu {
